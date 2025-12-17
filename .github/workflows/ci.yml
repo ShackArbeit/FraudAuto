@@ -69,10 +69,10 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Lint (webs)
-        run: pnpm --filter webs lint
+        run: pnpm --filter webs run lint
 
       - name: Build (webs)
-        run: pnpm --filter webs build
+        run: pnpm --filter webs run build
 
   backend_linux:
     name: Backend (Linux) - install & import check
