@@ -17,13 +17,13 @@ export default function TaiwanProsecutorMap({
 }: Props) {
   return (
     <div className="relative w-full ">
-      <div className="relative w-full max-h-[820px] aspect-[2000/1295] ">
+      <div className="relative w-full max-h-[820px] aspect-[2000/1295] border-1 border-red-500">
         <Image
           src={svgSrc}
           alt="Taiwan Map"
           fill
           sizes="(min-width: 1024px) 820px, 100vw"
-          className="select-none object-contain " 
+          className="select-none object-cover border-2 border-blue-500" 
           draggable={false}
           priority
         />

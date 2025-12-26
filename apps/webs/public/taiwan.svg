@@ -1,8 +1,9 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg"
-	viewBox="0 0 1000 1295"
+	viewBox="-500 0 2000 1295"
 	aria-label="Map of Taiwan"
-	style="background-color: #d9ecff; border: 1px solid #ccc;"
+	overflow="visible"
+	style="border: 1px solid #ccc;"
 >
 	<style>
 		path {
@@ -26,10 +27,37 @@
 		path.region-east {
 			stroke: #dc2626;
 		}
+		.island-label {
+			font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+			font-size: 18px;
+			fill: #000000;
+		}
 
 	</style>
 
-	<g transform="translate(-470.4 -362.9) scale(1.23)">
+	<rect id="background" x="-700" y="0" width="2400" height="1295" fill="#d9ecff" />
+
+	<g id="outlying-islands" aria-label="Outlying Islands" transform="translate(-170 0)">
+		<path
+			id="lienchiang"
+			aria-label="Lienchiang County"
+			d="M35 150 L55 142 L72 152 L70 172 L50 180 L32 168 Z"
+		/>
+
+		<path
+			id="penghu"
+			aria-label="Penghu County"
+			d="M60 550 L90 545 L110 560 L100 585 L72 590 L52 572 Z"
+		/>
+
+		<path
+			id="kinmen"
+			aria-label="Kinmen County"
+			d="M40 825 L70 815 L95 830 L85 855 L55 862 L32 845 Z"
+		/>
+	</g>
+
+	<g transform="translate(-470.4 -410) scale(1.35)">
 	<path
 		id="changhua-county" class="region-central"
 		aria-label="Changhua County"
