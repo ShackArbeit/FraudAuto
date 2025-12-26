@@ -31,6 +31,9 @@ export function FancyCheckbox({
 }: FancyCheckboxProps) {
 //   const id = React.useId();
   const s = SIZE[size];
+  const checkboxStyle: React.CSSProperties & { '--cb': string } = {
+    '--cb': checkColor,
+  };
 
   React.useEffect(() => {
     if (checked) {
@@ -45,7 +48,7 @@ export function FancyCheckbox({
         disabled ? 'opacity-60 cursor-not-allowed' : 'cursor-pointer',
         className,
       ].join(' ')}
-      style={{ ['--cb' as any]: checkColor }}
+      style={checkboxStyle}
     >
       <input
         id={id}
