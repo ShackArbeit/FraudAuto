@@ -1,6 +1,6 @@
 "use client";
 
-import { PROSECUTORS } from "@/app/prosecutors/data";
+import { PROSECUTORS } from "@/components/data";
 import { FancyCheckbox } from "./FancyCheckbox";
 
 type Props = {

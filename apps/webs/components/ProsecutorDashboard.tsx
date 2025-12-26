@@ -1,6 +1,6 @@
 "use client";
 
-import type { Prosecutor } from "@/app/prosecutors/data";
+import type { Prosecutor } from "@/components/data";
 
 type Props = {
   selected: Prosecutor[];

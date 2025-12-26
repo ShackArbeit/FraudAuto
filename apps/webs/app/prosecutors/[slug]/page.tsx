@@ -1,4 +1,4 @@
-import { findProsecutorBySlug } from "../data";
+import { findProsecutorBySlug } from "../../../components/data";
 
 export default async function ProsecutorDetailPage({
   params,
